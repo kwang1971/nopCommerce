@@ -250,7 +250,7 @@ namespace Nop.Plugin.Shipping.FixedByWeightByTotal
             this.AddOrUpdatePluginLocaleResource("Plugins.Shipping.FixedByWeightByTotal.Fields.Country.Hint", "If an asterisk is selected, then this shipping rate will apply to all customers, regardless of the country.");
             this.AddOrUpdatePluginLocaleResource("Plugins.Shipping.FixedByWeightByTotal.Fields.DataHtml", "Data");
             this.AddOrUpdatePluginLocaleResource("Plugins.Shipping.FixedByWeightByTotal.Fields.LimitMethodsToCreated", "Limit shipping methods to configured ones");
-            this.AddOrUpdatePluginLocaleResource("Plugins.Shipping.FixedByWeightByTotal.Fields.LimitMethodsToCreated.Hint", "If you check this option, then your customers will be limited to shipping options configured here. Otherwise, they'll be able to choose any existing shipping options even they've not configured here (zero shipping fee in this case).");
+            this.AddOrUpdatePluginLocaleResource("Plugins.Shipping.FixedByWeightByTotal.Fields.LimitMethodsToCreated.Hint", "If you check this option, then your customers will be limited to shipping options configured here. Otherwise, they'll be able to choose any existing shipping options even they are not configured here (zero shipping fee in this case).");
             this.AddOrUpdatePluginLocaleResource("Plugins.Shipping.FixedByWeightByTotal.Fields.LowerWeightLimit", "Lower weight limit");
             this.AddOrUpdatePluginLocaleResource("Plugins.Shipping.FixedByWeightByTotal.Fields.LowerWeightLimit.Hint", "Lower weight limit. This field can be used for \"per extra weight unit\" scenarios.");
             this.AddOrUpdatePluginLocaleResource("Plugins.Shipping.FixedByWeightByTotal.Fields.OrderSubtotalFrom", "Order subtotal from");
@@ -263,7 +263,7 @@ namespace Nop.Plugin.Shipping.FixedByWeightByTotal
             this.AddOrUpdatePluginLocaleResource("Plugins.Shipping.FixedByWeightByTotal.Fields.RatePerWeightUnit", "Rate per weight unit");
             this.AddOrUpdatePluginLocaleResource("Plugins.Shipping.FixedByWeightByTotal.Fields.RatePerWeightUnit.Hint", "Rate per weight unit.");
             this.AddOrUpdatePluginLocaleResource("Plugins.Shipping.FixedByWeightByTotal.Fields.ShippingMethod", "Shipping method");
-            this.AddOrUpdatePluginLocaleResource("Plugins.Shipping.FixedByWeightByTotal.Fields.ShippingMethod.Hint", "Choose shipping method");
+            this.AddOrUpdatePluginLocaleResource("Plugins.Shipping.FixedByWeightByTotal.Fields.ShippingMethod.Hint", "Choose shipping method.");
             this.AddOrUpdatePluginLocaleResource("Plugins.Shipping.FixedByWeightByTotal.Fields.StateProvince", "State / province");
             this.AddOrUpdatePluginLocaleResource("Plugins.Shipping.FixedByWeightByTotal.Fields.StateProvince.Hint", "If an asterisk is selected, then this shipping rate will apply to all customers from the given country, regardless of the state.");
             this.AddOrUpdatePluginLocaleResource("Plugins.Shipping.FixedByWeightByTotal.Fields.Store", "Store");

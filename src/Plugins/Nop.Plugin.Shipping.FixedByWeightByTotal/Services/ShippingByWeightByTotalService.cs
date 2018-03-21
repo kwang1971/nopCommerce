@@ -58,7 +58,7 @@ namespace Nop.Plugin.Shipping.FixedByWeightByTotal.Services
             return _cacheManager.Get(key, () =>
             {
                 var query = from sbw in _sbwtRepository.Table
-                            orderby sbw.StoreId, sbw.CountryId, sbw.StateProvinceId, sbw.Zip, sbw.ShippingMethodId, sbw.WeightFrom
+                            orderby sbw.StoreId, sbw.CountryId, sbw.StateProvinceId, sbw.Zip, sbw.ShippingMethodId, sbw.WeightFrom, sbw.OrderSubtotalFrom
                             select sbw;
 
                 var records = new PagedList<ShippingByWeightByTotalRecord>(query, pageIndex, pageSize);

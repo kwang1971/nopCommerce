@@ -13,7 +13,7 @@ namespace Nop.Plugin.Shipping.FixedByWeightByTotal
         public bool LimitMethodsToCreated { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether the "shipping calculation by weight by total" method is selected
+        /// Gets or sets a value indicating whether the "shipping calculation by weight and by total" method is selected
         /// </summary>
         public bool ShippingByWeightByTotalEnabled { get; set; }
     }

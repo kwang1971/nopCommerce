@@ -29,7 +29,7 @@
                                                 data: addAntiForgeryToken
                                             },
                                             destroy: {
-                                                url: "@Html.Raw(Url.Action("DeleteRateByWeighByTotal", "FixedByWeightByTotal"))",
+                                                url: "@Html.Raw(Url.Action("DeleteRateByWeightByTotal", "FixedByWeightByTotal"))",
                                                 type: "POST",
                                                 dataType: "json",
                                                 data: addAntiForgeryToken
@@ -105,7 +105,7 @@
                                             width: 100,
                                             headerAttributes: { style: "text-align:center" },
                                             attributes: { style: "text-align:center" },
-                                            template: "<button onclick=\"javascript:OpenWindow('@Url.Action("EditRateByWeighByTotalPopup", "FixedByWeightByTotal")?id=#=Id#&btnId=btnRefresh&formId=shipping-byweight-form', 800, 800, true); return false;\" class='btn btn-default'><i class=\"fa fa-pencil\"></i>@T("Admin.Common.Edit")</button>"
+                                            template: "<button onclick=\"javascript:OpenWindow('@Url.Action("EditRateByWeightByTotalPopup", "FixedByWeightByTotal")?id=#=Id#&btnId=btnRefresh&formId=shipping-byweight-form', 800, 800, true); return false;\" class='btn btn-default'><i class=\"fa fa-pencil\"></i>@T("Admin.Common.Edit")</button>"
                                         }, {
                                             command: { name: "destroy", text: "@T("Admin.Common.Delete")" },
                                             title: "@T("Admin.Common.Delete")",
@@ -118,7 +118,7 @@
             </div>
             <div class="panel-footer">
                 <button type="submit" id="btnAddNewRecord" class="btn btn-primary"
-                        onclick="javascript:OpenWindow('@(Url.Action("AddRateByWeighByTotalPopup", "FixedByWeightByTotal", new { btnId = "btnRefresh", formId = "shipping-byweight-form" }))', 800, 800, true); return false;">
+                        onclick="javascript:OpenWindow('@(Url.Action("AddRateByWeightByTotalPopup", "FixedByWeightByTotal", new { btnId = "btnRefresh", formId = "shipping-byweight-form" }))', 800, 800, true); return false;">
                     @T("Plugins.Shipping.FixedByWeightByTotal.AddRecord")
                 </button>
                 <input type="submit" id="btnRefresh" class="btn btn-default" style="display: none" />

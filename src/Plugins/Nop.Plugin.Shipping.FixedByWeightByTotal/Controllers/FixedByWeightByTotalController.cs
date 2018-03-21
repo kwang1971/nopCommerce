@@ -225,7 +225,7 @@ namespace Nop.Plugin.Shipping.FixedByWeightByTotal.Controllers
             return Json(gridModel);
         }
 
-        public IActionResult AddRateByWeighByTotalPopup()
+        public IActionResult AddRateByWeightByTotalPopup()
         {
             if (!_permissionService.Authorize(StandardPermissionProvider.ManageShippingSettings))
                 return AccessDeniedView();
@@ -266,7 +266,7 @@ namespace Nop.Plugin.Shipping.FixedByWeightByTotal.Controllers
         
         [HttpPost]
         [AdminAntiForgery]
-        public IActionResult AddRateByWeighByTotalPopup(ShippingByWeightByTotalModel model)
+        public IActionResult AddRateByWeightByTotalPopup(ShippingByWeightByTotalModel model)
         {
             if (!_permissionService.Authorize(StandardPermissionProvider.ManageShippingSettings))
                 return AccessDeniedView();
@@ -294,7 +294,7 @@ namespace Nop.Plugin.Shipping.FixedByWeightByTotal.Controllers
             return View("~/Plugins/Shipping.FixedByWeightByTotal/Views/AddRateByWeightByTotalPopup.cshtml", model);
         }
         
-        public IActionResult EditRateByWeighByTotalPopup(int id)
+        public IActionResult EditRateByWeightByTotalPopup(int id)
         {
             if (!_permissionService.Authorize(StandardPermissionProvider.ManageShippingSettings))
                 return AccessDeniedView();
@@ -361,7 +361,7 @@ namespace Nop.Plugin.Shipping.FixedByWeightByTotal.Controllers
 
         [HttpPost]
         [AdminAntiForgery]
-        public IActionResult EditRateByWeighByTotalPopup(ShippingByWeightByTotalModel model)
+        public IActionResult EditRateByWeightByTotalPopup(ShippingByWeightByTotalModel model)
         {
             if (!_permissionService.Authorize(StandardPermissionProvider.ManageShippingSettings))
                 return AccessDeniedView();
@@ -395,7 +395,7 @@ namespace Nop.Plugin.Shipping.FixedByWeightByTotal.Controllers
 
         [HttpPost]
         [AdminAntiForgery]
-        public IActionResult DeleteRateByWeighByTotal(int id)
+        public IActionResult DeleteRateByWeightByTotal(int id)
         {
             if (!_permissionService.Authorize(StandardPermissionProvider.ManageShippingSettings))
                 return Content("Access denied");
